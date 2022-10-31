@@ -19,4 +19,10 @@ describe('Test for math', () => {
 			expect(res).toBe(3);
 		});
 	});
+	describe('tests divide for zero', () => {
+		test('should divide for zero', () => {
+			const res = divide(6, 0);
+			expect(res).toBeNull();
+		});
+	});
 });
